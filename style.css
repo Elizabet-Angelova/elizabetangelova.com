@@ -14,6 +14,53 @@ body {
     overflow-x: hidden;
 }
 
+.fade-out {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 120;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fade-out 1.4s ease-in-out;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.fade-logo {
+    width: 2.2vw;
+    height: auto;
+}
+
+.circle {
+    width: 6vw;
+    height: 6vw;
+    border-radius: 100px;
+    padding: 1rem;
+    border-left: 2px solid var(--lilac);
+    border-bottom: 2px solid transparent;
+    animation: spin 1s infinite linear;
+    position: absolute;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
 
 ::-webkit-scrollbar {
     width: 3px;
@@ -48,6 +95,7 @@ body {
     height: 6.5vh;
     width: auto;
     margin-top: 0.5rem;
+    cursor: pointer;
 }
 
 .nav-items {
@@ -190,9 +238,10 @@ body {
 }
 
 .portfolio-section {
+    padding-top: 10vh;
     width: 100vw;
     padding-left: 14vw;
-    transform: translateY(-20vh);
+    transform: translateY(-26vh);
 }
 
 .portfolio-title-title {
@@ -341,5 +390,162 @@ body {
         transform: rotate(30deg);
     }
 }
-  
-  
+
+
+.container {
+    margin-top: 13vh;
+    background: rgba(255,255,255, 0.03);
+    width: 100vw;
+    height: fit-content;
+    padding: 18vh 0  18vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-background {
+    background-image: url(./assets/dev.svg) ;
+    background-position: center;
+    width: 100vw;
+    height: 30vh;
+}
+
+.dev {
+    width: 100vw;
+    height: auto;
+    position: absolute;
+}
+
+.dev-text {
+    z-index: 10;
+    width: 55vw;
+    text-align: center;
+    position: relative;
+    z-index: 100;
+}
+
+.contacts-section {
+    margin-top: 50vh;
+    padding: 0vh 0 30vh 0;
+     width: 100vw;
+     display: flex;
+}
+
+.conatiner-get-in-touch {
+   width: 50vw;
+   height: 38vh;
+   background: #202020;
+   border-top-right-radius: 34px;
+   border-bottom-right-radius: 34px;
+   box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.24);
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.get-in-touch {
+    width: 20vw;
+}
+
+.container-bubbles {
+    width: 40vw;
+    height: 38vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(-7vw);
+}
+
+.phone, .email{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.9);
+    font-family: var(--quicksand);
+    color:#202020;
+    padding: 0.65rem;
+    font-weight: 600;
+    margin: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.phone-icon {
+    width: 1rem;
+    height: auto;
+    margin-right: 0.55rem;
+}
+
+.email-icon {
+    width: 1.1rem;
+    height: auto;
+    margin-right: 0.55rem;
+
+}
+
+.container-socials {
+    margin-left: auto;
+    height: 38vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 5vw;
+}
+
+.close-easy, .close-prekrasna, .close-arpha, .close-bindexis, .close-bs {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100px;
+    background: white;
+    box-shadow: 0px 0px 10px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 5vh;
+    left: 90vw;
+    cursor: pointer;
+}
+
+.close-icon {
+    width: 1.1rem;
+    height: auto;
+}
+
+.easy-case, .prekrasna-case, .arpha-case, .bindexis-case, .bs-case {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.85);
+    height: fit-content;
+    position: absolute;
+    z-index: 110;
+    padding: 10vh 0 10vh 0;
+}
+
+.case-study {
+    width: 70vw;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: 0px 3px 20px black;
+    animation: slide-up 1s ease-in-out forwards;
+}
+
+.slide-down {
+    animation: slide-down 1s ease-in-out;
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(50vw);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
