@@ -169,7 +169,7 @@ close_bs.addEventListener('click', () => {
 
 let dev_loc = dev_section.getBoundingClientRect().top + window.scrollY;
 window.addEventListener("scroll", ()=> {
-if (window.scrollY >= 3000) {
+if (window.scrollY >= 3500) {
     document.getElementsByClassName('dev')[0].classList.add('slide-left')
 }
 })
