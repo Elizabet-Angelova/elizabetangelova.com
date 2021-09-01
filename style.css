@@ -411,6 +411,8 @@ body {
 }
 
 .dev {
+    opacity: 0;
+    transform: translateX(100%);
     width: 100vw;
     height: auto;
     position: absolute;
@@ -549,3 +551,18 @@ body {
     }
 }
 
+@keyframes slide-left {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0)
+        }
+}
+
+
+.slide-left {
+    animation: slide-left 2s ease-in-out forwards;
+}

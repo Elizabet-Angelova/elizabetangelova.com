@@ -106,7 +106,7 @@ easy.addEventListener('click', () => {
 
 close_easy.addEventListener('click', () => {
     document.getElementsByClassName('easy-case')[0].style.display = 'none';
-    easy.scrollIntoView({ 
+    document.getElementsByClassName('easy1')[0].scrollIntoView({ 
         behavior: 'auto' 
     });
 })
@@ -120,7 +120,7 @@ prekrasna.addEventListener('click', () => {
 
 close_prekrasna.addEventListener('click', () => {
     document.getElementsByClassName('prekrasna-case')[0].style.display = 'none';
-    prekrasna.scrollIntoView({ 
+    document.getElementsByClassName('prekrasna1')[0].scrollIntoView({ 
         behavior: 'auto' 
     });
 })
@@ -134,7 +134,7 @@ arpha.addEventListener('click', () => {
 
 close_arpha.addEventListener('click', () => {
     document.getElementsByClassName('arpha-case')[0].style.display = 'none';
-    arpha.scrollIntoView({ 
+    document.getElementsByClassName('arpha1')[0].scrollIntoView({ 
         behavior: 'auto' 
     });
 })
@@ -148,7 +148,7 @@ bindexis.addEventListener('click', () => {
 
 close_bindexis.addEventListener('click', () => {
     document.getElementsByClassName('bindexis-case')[0].style.display = 'none';
-    bindexis.scrollIntoView({ 
+    document.getElementsByClassName('bindexis1')[0].scrollIntoView({ 
         behavior: 'auto' 
     });
 })
@@ -162,7 +162,14 @@ bs.addEventListener('click', () => {
 
 close_bs.addEventListener('click', () => {
     document.getElementsByClassName('bs-case')[0].style.display = 'none';
-    bs.scrollIntoView({ 
+    document.getElementsByClassName('bs1')[0].scrollIntoView({ 
         behavior: 'auto' 
     });
+})
+
+let dev_loc = dev_section.getBoundingClientRect().top + window.scrollY;
+window.addEventListener("scroll", ()=> {
+if (window.scrollY >= 3000) {
+    document.getElementsByClassName('dev')[0].classList.add('slide-left')
+}
 })
