@@ -173,3 +173,19 @@ if (window.scrollY >= 3500) {
     document.getElementsByClassName('dev')[0].classList.add('slide-left')
 }
 })
+
+let burger = document.getElementsByClassName('burger')[0];
+let closeMenu = document.getElementsByClassName('close-icon-mobile')[0];
+let menuOpen = false;
+
+burger.addEventListener('click', () => {
+menuOpen = !menuOpen;
+burger.style.display = 'none';
+closeMenu.style.display = 'block';
+})
+
+closeMenu.addEventListener('click', () => {
+menuOpen = !menuOpen;
+burger.style.display = 'block';
+closeMenu.style.display = 'none';
+})
