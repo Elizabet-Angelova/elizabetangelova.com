@@ -248,7 +248,7 @@ body {
  font-family: var(--century);
  color: white;
  font-weight: bolder;
- font-size: 1.9rem;
+ font-size: 2.3rem;
  letter-spacing: 0.1rem;
 }
 
@@ -317,7 +317,7 @@ body {
  .first-container {
     box-sizing: border-box;
      display: flex;
-     padding: 10vh 14vw 6vh 14vw;
+     padding: 10vh 19vw 0vh 17vw;
  }
 
  .me-too-img {
@@ -331,7 +331,7 @@ body {
  }
 
  .text {
-     margin-top: 3rem;
+     margin-top: 1.5rem;
      color: white;
      font-family: var(--quicksand);
      font-size: 0.9rem;
@@ -342,7 +342,7 @@ body {
  .second-container {
     box-sizing: border-box;
     display: flex;
-    padding: 0vh 14vw 6vh 18vw;
+    padding: 0vh 17vw 15vh 20vw;
  }
 
  .kari-bari {
@@ -466,7 +466,7 @@ body {
     display: flex;
     background: white;
     border-radius: 5px;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.9);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.7);
     font-family: var(--quicksand);
     color:#202020;
     padding: 0.65rem;
@@ -630,7 +630,6 @@ display: none;
     .title-img {
         width: 90vw;
         height: auto;
-        margin-left: 1vw;
     }
     
     .me-one-img {
