@@ -184,12 +184,21 @@ menuOpen = !menuOpen;
 burger.style.display = 'none';
 closeMenu.style.display = 'block';
 menu.style.display = 'block';
-
+menu.classList.add('show-nav')
+if (menu.classList.toString().includes('hide-nav')) {
+menu.classList.remove('hide-nav')
+}
 })
 
 closeMenu.addEventListener('click', () => {
 menuOpen = !menuOpen;
 burger.style.display = 'block';
 closeMenu.style.display = 'none';
+menu.classList.add('hide-nav')
+setTimeout(() => {
 menu.style.display = 'none';
+}, 700)
+if (menu.classList.toString().includes('show-nav')) {
+    menu.classList.remove('show-nav')
+    }
 })
