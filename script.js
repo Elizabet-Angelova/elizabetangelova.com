@@ -176,16 +176,20 @@ if (window.scrollY >= 3500) {
 
 let burger = document.getElementsByClassName('burger')[0];
 let closeMenu = document.getElementsByClassName('close-icon-mobile')[0];
+let menu = document.getElementsByClassName('nav-items')[0]
 let menuOpen = false;
 
 burger.addEventListener('click', () => {
 menuOpen = !menuOpen;
 burger.style.display = 'none';
 closeMenu.style.display = 'block';
+menu.style.display = 'block';
+
 })
 
 closeMenu.addEventListener('click', () => {
 menuOpen = !menuOpen;
 burger.style.display = 'block';
 closeMenu.style.display = 'none';
+menu.style.display = 'none';
 })

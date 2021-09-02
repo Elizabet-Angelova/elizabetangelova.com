@@ -330,6 +330,11 @@ body {
  padding-top: 3rem;
  }
 
+ .about-me-second-text {
+    padding-right: 8vw; 
+    padding-top: 6.5vh;
+ }
+
  .text {
      margin-top: 1.5rem;
      color: white;
@@ -401,6 +406,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.ul-desktop {
+    text-align: left; 
+    width: 32vw; 
+    padding-left: 14vw;
 }
 
 .img-background {
@@ -585,7 +596,19 @@ body {
     }
 
     .nav-items {
-display: none;
+        display: none;
+width: 85vw;
+height: 100vh;
+position: fixed;
+top: 0;
+right: 0;
+z-index: -7;
+box-sizing: border-box;
+background-color: black;
+flex-direction: column;
+align-items: flex-end;
+padding: 10vh 10vw 30vh 10vw;
+
     }
 
     .burger {
@@ -652,7 +675,8 @@ display: none;
     .portfolio-section {
         padding-top: 30vh;
         width: 100vw;
-        padding: 35vh 12vw 0 12vw;
+        padding: 15vh 10vw 0 10vw;
+        transform: translateY(0);
     }
        
        .portfolio-title-text {
@@ -662,17 +686,156 @@ display: none;
        
        .projects {
            margin-top: 6vh;
-       }
-       
-       .project {
-           display: flex;
            align-items: center;
            justify-content: center;
        }
        
+       .project {
+           display: block;
+       }
+       
        .project-img {
-        width: 90vw;
+        width: 100%;
         height: auto;
        }
        
+       .chevrons {
+           display: none;
+       }
+       
+       .project:hover > .chevrons{
+           display: none;
+        }
+
+        .about-me-section {
+            width: 100vw;
+            height: fit-content;
+            box-sizing: border-box;
+        }
+       
+        .first-container {
+           box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            padding: 20vh 10vw 0vh 10vw;
+            justify-content: center;
+            align-items: center;
+        }
+       
+        .me-too-img {
+            width: 80vw;
+            height: 80vw;
+        }
+       
+        .about-me-first-text {
+        padding-left: 0rem;
+        padding-top: 3rem;
+        }
+       
+        .about-me-second-text {
+            padding-right: 0vw; 
+            padding-top: 0vh;
+            padding-bottom: 7vh;
+         }
+
+        .second-container {
+           box-sizing: border-box;
+           display: flex;
+           display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+           padding: 3vh 10vw 7vh 10vw;
+        }
+       
+        .kari-bari {
+            display: flex;
+            flex-direction: column;
+        }
+       
+        .kari-heart {
+            width: 60vw;
+            height: auto;
+            transform: translateY(-15%) translateX(0%);
+       
+        }
+       
+        .small-heart {
+            width: 7vw;
+            height: auto;
+            margin-left: 35vw;
+        }
+       
+        .big-heart {
+           width: 10vw;
+           height: auto;
+           margin-left: 40vw;
+       }
+
+       .container {
+        margin-top: 0vh;
+        padding: 10vh 5vw 10vh 5vw;
+        box-sizing: border-box;
+    }
+
+    .dev-text {
+        width: 100%;
+    }
+    
+    .dev {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+
+    .ul-desktop {
+        text-align: left; 
+        width: 80vw; 
+        padding-left: 10vw;
+    }
+
+    .contacts-section {
+        margin-top: 30vh;
+        padding: 0vh 0 10vh 0;
+         width: 100vw;
+         display: flex;
+         flex-direction: column;
+    }
+    
+    .conatiner-get-in-touch {
+       width: 90vw;
+       height: fit-content;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       padding: 5vh 10vw 10vh 10vw;
+    }
+    
+    .get-in-touch {
+        width: 100%;
+    }
+    
+    .container-bubbles {
+        width: 100vw;
+        height: fit-content;
+        transform: translateX(2vw) translateY(-30%);
+    }
+    
+    .phone, .email{
+        width: fit-content;
+        height: fit-content;
+        font-size: 0.95rem;
+    }
+  
+    .container-socials {
+        margin-left: 0;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 10vh 0vw 0vh 10vw;
+    }
+
+    .icon {
+        margin: 0 10vw 0 0vw;
+    }
 } 
