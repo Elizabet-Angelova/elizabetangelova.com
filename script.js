@@ -4,6 +4,35 @@ setTimeout(() => {
 fade.style.display = 'none';
 }, 2600)
 
+let burger = document.getElementsByClassName('burger')[0];
+let closeMenu = document.getElementsByClassName('close-icon-mobile')[0];
+let menu = document.getElementsByClassName('nav-items')[0]
+let menuOpen = false;
+
+burger.addEventListener('click', () => {
+menuOpen = !menuOpen;
+burger.style.display = 'none';
+closeMenu.style.display = 'block';
+menu.style.display = 'block';
+menu.classList.add('show-nav')
+if (menu.classList.toString().includes('hide-nav')) {
+menu.classList.remove('hide-nav')
+}
+})
+
+closeMenu.addEventListener('click', () => {
+menuOpen = !menuOpen;
+burger.style.display = 'block';
+closeMenu.style.display = 'none';
+menu.classList.add('hide-nav')
+setTimeout(() => {
+menu.style.display = 'none';
+}, 700)
+if (menu.classList.toString().includes('show-nav')) {
+    menu.classList.remove('show-nav')
+    }
+})
+
 let portfolio_nav = document.getElementsByClassName('PORTFOLIO')[0];
 let about_nav = document.getElementsByClassName('ABOUT')[0];
 let dev_nav = document.getElementsByClassName('DEV')[0];
@@ -28,6 +57,19 @@ portfolio_nav.addEventListener('click',() => {
     portfolio_section.scrollIntoView({ 
         behavior: 'smooth' 
     });
+
+    if (menuOpen) {
+        menuOpen = !menuOpen;
+    burger.style.display = 'block';
+closeMenu.style.display = 'none';
+menu.classList.add('hide-nav')
+setTimeout(() => {
+menu.style.display = 'none';
+}, 700)
+if (menu.classList.toString().includes('show-nav')) {
+    menu.classList.remove('show-nav')
+    }
+}
 })
 
 button.addEventListener('click',() => {
@@ -35,6 +77,18 @@ button.addEventListener('click',() => {
     portfolio_section.scrollIntoView({ 
         behavior: 'smooth' 
     });
+    if (menuOpen) {
+        menuOpen = !menuOpen;
+        burger.style.display = 'block';
+    closeMenu.style.display = 'none';
+    menu.classList.add('hide-nav')
+    setTimeout(() => {
+    menu.style.display = 'none';
+    }, 700)
+    if (menu.classList.toString().includes('show-nav')) {
+        menu.classList.remove('show-nav')
+        }
+    }
 })
 
 about_nav.addEventListener('click',() => {
@@ -42,6 +96,18 @@ about_nav.addEventListener('click',() => {
     about_section.scrollIntoView({ 
         behavior: 'smooth' 
     });
+    if (menuOpen) {
+        menuOpen = !menuOpen;
+        burger.style.display = 'block';
+    closeMenu.style.display = 'none';
+    menu.classList.add('hide-nav')
+    setTimeout(() => {
+    menu.style.display = 'none';
+    }, 700)
+    if (menu.classList.toString().includes('show-nav')) {
+        menu.classList.remove('show-nav')
+        }
+    }
 })
 
 dev_nav.addEventListener('click',() => {
@@ -49,6 +115,18 @@ dev_nav.addEventListener('click',() => {
     dev_section.scrollIntoView({ 
         behavior: 'smooth' 
     });
+    if (menuOpen) {
+        menuOpen = !menuOpen;
+        burger.style.display = 'block';
+    closeMenu.style.display = 'none';
+    menu.classList.add('hide-nav')
+    setTimeout(() => {
+    menu.style.display = 'none';
+    }, 700)
+    if (menu.classList.toString().includes('show-nav')) {
+        menu.classList.remove('show-nav')
+        }
+    }
 })
 
 contacts_nav.addEventListener('click',() => {
@@ -56,6 +134,18 @@ contacts_nav.addEventListener('click',() => {
     contacts_section.scrollIntoView({ 
         behavior: 'smooth' 
     });
+    if (menuOpen) {
+        menuOpen = !menuOpen;
+        burger.style.display = 'block';
+    closeMenu.style.display = 'none';
+    menu.classList.add('hide-nav')
+    setTimeout(() => {
+    menu.style.display = 'none';
+    }, 700)
+    if (menu.classList.toString().includes('show-nav')) {
+        menu.classList.remove('show-nav')
+        }
+    }
 })
 
 let gh = document.getElementsByClassName('gh')[0];
@@ -102,6 +192,7 @@ easy.addEventListener('click', () => {
     document.getElementsByClassName('landing-section')[0].scrollIntoView({ 
         behavior: 'auto' 
     });
+    
 })
 
 close_easy.addEventListener('click', () => {
@@ -174,31 +265,3 @@ if (window.scrollY >= 3500) {
 }
 })
 
-let burger = document.getElementsByClassName('burger')[0];
-let closeMenu = document.getElementsByClassName('close-icon-mobile')[0];
-let menu = document.getElementsByClassName('nav-items')[0]
-let menuOpen = false;
-
-burger.addEventListener('click', () => {
-menuOpen = !menuOpen;
-burger.style.display = 'none';
-closeMenu.style.display = 'block';
-menu.style.display = 'block';
-menu.classList.add('show-nav')
-if (menu.classList.toString().includes('hide-nav')) {
-menu.classList.remove('hide-nav')
-}
-})
-
-closeMenu.addEventListener('click', () => {
-menuOpen = !menuOpen;
-burger.style.display = 'block';
-closeMenu.style.display = 'none';
-menu.classList.add('hide-nav')
-setTimeout(() => {
-menu.style.display = 'none';
-}, 700)
-if (menu.classList.toString().includes('show-nav')) {
-    menu.classList.remove('show-nav')
-    }
-})

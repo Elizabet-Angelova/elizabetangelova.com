@@ -586,6 +586,11 @@ body {
 
 @media only screen and (max-width: 1100px) {
 
+
+    .body {
+        overflow-x: hidden;
+    }
+
     .fade-logo {
         width: 7vw;
     }
@@ -603,6 +608,7 @@ position: fixed;
 top: 0;
 right: 0;
 z-index: -7;
+box-shadow: -5px 0 50px rgba(0, 0, 0, 0.7);
 box-sizing: border-box;
 background-color: black;
 padding: 13vh 10vw 30vh 10vw;
@@ -610,7 +616,7 @@ padding: 13vh 10vw 30vh 10vw;
 
     @keyframes show-nav {
         0% {
-            transform: translateX(100%);
+            transform: translateX(120%);
         }
         100% {
             transform: translateX(0%);
@@ -622,7 +628,7 @@ padding: 13vh 10vw 30vh 10vw;
             transform: translateX(0%);
         }
         100% {
-            transform: translateX(100%);
+            transform: translateX(120%);
         }
     }
 
@@ -824,6 +830,7 @@ margin-bottom: 6.5vh;
 
     .dev-text {
         width: 100%;
+        z-index: 0;
     }
     
     .dev {
@@ -907,18 +914,17 @@ margin-bottom: 6.5vh;
     .easy-case, .prekrasna-case, .arpha-case, .bindexis-case, .bs-case {
         display: none;
         width: 100vw;
-        height: 100vh;
         justify-content: center;
         align-items: center;
         background: rgba(0, 0, 0, 0.85);
         height: fit-content;
         position: absolute;
         z-index: 110;
-        padding: 2vh 0 10vh 0;
+        padding: 5vh 0 370vh 0;
     }
     
     .case-study {
-        width: 95vw;
+        width: 100vw;
         border-radius: 10px;
     }
 } 
