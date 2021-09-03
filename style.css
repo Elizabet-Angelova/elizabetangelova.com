@@ -608,7 +608,7 @@ position: fixed;
 top: 0;
 right: 0;
 z-index: -7;
-box-shadow: -5px 0 50px rgba(0, 0, 0, 0.7);
+box-shadow: -5px 0 50px rgba(0, 0, 0, 0.4);
 box-sizing: border-box;
 background-color: black;
 padding: 13vh 10vw 30vh 10vw;
