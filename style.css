@@ -301,6 +301,7 @@ body {
 
 .project:hover > .project-img{
    transform: scale(1.07) translateX(-2.3vw);
+   cursor: pointer;
 }
 
 .project:hover > .chevrons{
@@ -508,7 +509,7 @@ body {
     padding-right: 5vw;
 }
 
-.close-easy, .close-prekrasna, .close-arpha, .close-bindexis, .close-bs {
+.close-easy, .close-prekrasna, .close-arpha, .close-bindexis, .close-bs, .close-mp {
     width: 3rem;
     height: 3rem;
     border-radius: 100px;
@@ -528,7 +529,7 @@ body {
     height: auto;
 }
 
-.easy-case, .prekrasna-case, .arpha-case, .bindexis-case, .bs-case {
+.easy-case, .prekrasna-case, .arpha-case, .bindexis-case, .bs-case, .mp-case {
     display: none;
     width: 100vw;
     height: 100vh;
@@ -890,7 +891,7 @@ margin-bottom: 6.5vh;
         margin: 0 10vw 0 0vw;
     }
 
-    .close-easy, .close-prekrasna, .close-arpha, .close-bindexis, .close-bs {
+    .close-easy, .close-prekrasna, .close-arpha, .close-bindexis, .close-bs, .close-mp {
         width: 2.5rem;
         height: 2.5rem;
         z-index: 200;
@@ -911,7 +912,7 @@ margin-bottom: 6.5vh;
         height: auto;
     }
     
-    .easy-case, .prekrasna-case, .arpha-case, .bindexis-case, .bs-case {
+    .easy-case, .prekrasna-case, .arpha-case, .bindexis-case, .bs-case, .mp-case {
         display: none;
         width: 100vw;
         justify-content: center;

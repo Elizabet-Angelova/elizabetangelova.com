@@ -175,6 +175,8 @@ fb1.addEventListener('click', () => {
     window.open('https://www.facebook.com/elizabet.angelova.31/', '_blank');
 })
 
+let mp = document.getElementsByClassName('mp')[0];
+let close_mp = document.getElementsByClassName('close-mp')[0];
 let easy = document.getElementsByClassName('easy')[0];
 let close_easy = document.getElementsByClassName('close-easy')[0];
 let prekrasna = document.getElementsByClassName('prekrasna')[0];
@@ -186,6 +188,19 @@ let close_bindexis = document.getElementsByClassName('close-bindexis')[0];
 let bs = document.getElementsByClassName('bs')[0];
 let close_bs = document.getElementsByClassName('close-bs')[0];
 
+mp.addEventListener('click', () => {
+    document.getElementsByClassName('mp-case')[0].style.display = 'flex';
+    document.getElementsByClassName('landing-section')[0].scrollIntoView({ 
+        behavior: 'auto' 
+    });
+    
+})
+close_mp.addEventListener('click', () => {
+    document.getElementsByClassName('mp-case')[0].style.display = 'none';
+    document.getElementsByClassName('mp1')[0].scrollIntoView({ 
+        behavior: 'auto' 
+    });
+})
 
 easy.addEventListener('click', () => {
     document.getElementsByClassName('easy-case')[0].style.display = 'flex';
